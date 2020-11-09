@@ -1,25 +1,29 @@
-interface Testt
+class Test1
 {
-public void name();
+void car()
+{
+System.out.println(" I want red color car");
+}
 }
 
 
-class Test implements Testt
+class Test2 extends Test1
 {
-public void name()
+void car()
 {
-System.out.println(" hello I am sarwesh kumar");
-} 
+System.out.println(" I want white color car");
 }
+
+}
+
 
 class Demo
 {
-public static void main(String[] args)
+
+public static void main(String a[])
 {
-Test t=new Test();
-t.name();
+Test2 t=new Test2();
+t.car();
 
 }
-
-
 }
